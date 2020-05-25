@@ -1,0 +1,349 @@
+@import "mCustomScrollbar.css";
+
+aside {
+    top: 0;
+    left: -120%;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #fff;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    overflow: auto;
+    background-color: var(--Background-grey);
+
+    &.active {
+        left: 0;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+    }
+
+    span.open-menu {
+        position: absolute;
+        top: 20px;
+    }
+
+    .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+        margin-right: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .list-link {
+        padding: 0 20px;
+
+        a{
+            display: inline-flex;
+        }
+
+
+        img {
+            width: 98px;
+            padding-left: 37px;
+            padding-top: 9px;
+        }
+
+        ul {
+            // margin-top: 34px;
+            margin-bottom: 34px;
+
+            li {
+                position: relative;
+                line-height: 42px;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    top: 18px;
+                    background-color: var(--Color-green);
+                }
+
+                span.dropdown-nav {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #282828;
+                    position: relative;
+                    padding-left: 17px;
+                    font-family: 'GothamPro-Medium';
+                    cursor: pointer;
+                }
+
+                ul {
+                    margin-top: 4px;
+                    padding-left: 22px;
+                    margin-bottom: -10px;
+                    display: none;
+
+                    &.active {
+                        display: block;
+                    }
+
+                    li {
+                        line-height: 18px;
+                        min-height: 25px;
+                        margin-bottom: 20px;
+                        display: flex;
+                        align-items: center;
+
+                        a {
+                            font-size: 14px;
+                            font-weight: 400;
+                            font-family: "GothamPro", sans-serif;
+                        }
+
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+
+                a {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #282828;
+                    position: relative;
+                    padding-left: 17px;
+                    font-family: 'GothamPro-Medium';
+                }
+            }
+        }
+    }
+
+    .aside-footer {
+        background-color: var(--Color-black);
+        padding: 52px 32px;
+        min-height: auto;
+
+        .telephone {
+            color: #ffffff;
+            font-family: 'GothamPro-Medium';
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 30px;
+            text-transform: uppercase;
+            padding-left: 62px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '\e80d';
+                color: #fff;
+                left: 34px;
+                font-family: "fontello";
+            }
+        }
+
+        .btn-call {
+            display: flex;
+            margin-top: 19px;
+            max-width: 250px;
+        }
+
+        .social {
+            margin: 39px 0 30px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 63px;
+            align-items: center;
+            max-width: 250px;
+
+            a {
+                color: var(--Color-grey);
+
+                &:hover {
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+
+            i.icon-instagram {
+                font-size: 21px;
+            }
+
+            i.icon-facebook {
+                font-size: 23px;
+            }
+
+            i.icon-vk {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    span.open-menu {
+        display: none;
+    }
+
+    .aside {
+        width: 305px;
+        background-color: var(--Background-grey);
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .mCSB_inside .mCSB_container {
+            margin-right: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px 0 0;
+        }
+
+        .mCSB_scrollTools {
+            opacity: 0;
+        }
+
+        .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+            background-color: #ccc !important;
+        }
+
+        .mCSB_scrollTools .mCSB_dragger {
+            background-color: #ccc !important;
+        }
+
+        .list-link {
+            padding: 0 32px;
+
+            img {
+                width: auto;
+                padding-left: 0;
+                padding-top: 0;
+            }
+
+            ul {
+                margin-top: 20px;
+                margin-bottom: 25px;
+
+                li {
+                    position: relative;
+                    line-height: 42px;
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        width: 5px;
+                        height: 5px;
+                        top: 18px;
+                        background-color: var(--Color-green);
+                    }
+
+                    ul {
+                        margin-top: 4px;
+                        padding-left: 22px;
+                        margin-bottom: -10px;
+
+                        li {
+                            line-height: 18px;
+                            min-height: 25px;
+                            margin-bottom: 20px;
+                            display: flex;
+                            align-items: center;
+
+                            a {
+                                font-size: 14px;
+                                font-weight: 400;
+                                font-family: "GothamPro", sans-serif;
+                            }
+
+                            &::before {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    a {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #282828;
+                        position: relative;
+                        padding-left: 17px;
+                        font-family: 'GothamPro-Medium';
+                    }
+                }
+            }
+        }
+
+        .aside-footer {
+            background-color: var(--Color-black);
+            padding: 16px 32px 0;
+
+            .telephone {
+                color: #ffffff;
+                font-family: 'GothamPro-Medium';
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 30px;
+                text-transform: uppercase;
+                padding-left: 62px;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: '\e80d';
+                    color: #fff;
+                    left: 34px;
+                    font-family: "fontello";
+                }
+            }
+
+            .btn-call {
+                display: flex;
+                margin-top: 19px;
+            }
+
+            .social {
+                margin: 39px auto 25px;
+                display: flex;
+                justify-content: space-between;
+                padding: 0px 63px;
+                align-items: center;
+
+                a {
+                    color: var(--Color-grey);
+
+                    &:hover {
+                        i {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                i.icon-instagram {
+                    font-size: 21px;
+                }
+
+                i.icon-facebook {
+                    font-size: 23px;
+                }
+
+                i.icon-vk {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-height: 1080px) {
+    .aside .aside-footer {
+        padding: 52px 32px 85px;
+    }
+}

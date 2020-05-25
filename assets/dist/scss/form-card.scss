@@ -1,0 +1,380 @@
+.section-works {
+    .cart {
+        padding-top: 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 22px;
+        font-family: 'GothamPro-Bold';
+        margin-bottom: 27px;
+        display: block;
+        color: #000;
+    }
+
+    .radio-group {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 14px;
+    }
+
+    .wcpa_radio {
+        width: 50%;
+        margin-bottom: 27px;
+        min-width: 214px;
+    }
+
+    .wcpa_form_outer {
+        .wcpa_form_item {
+            .wcpa_checkbox {
+                label {
+                    display: flex;
+                }
+
+                .wcpa_check {
+                    width: 16px;
+                    height: 16px;
+                    min-width: 16px;
+                    min-height: 16px;
+                    background-color: inherit;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 9px;
+                    margin-top: 3px;
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        content: '\e800';
+                        width: 8px;
+                        height: 8px;
+                        font-family: "fontello";
+                        font-size: 11px;
+                        top: -5px;
+                        left: 1px;
+                        color: var(--Color-yellow);
+                        opacity: 0;
+                    }
+                }
+
+                .jcf-label-active {
+                    .wcpa_check {
+                        border: 1px solid var(--Color-yellow);
+
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            .wcpa_radio {
+                .wcpa_check {
+                    width: 16px;
+                    height: 16px;
+                    min-width: 16px;
+                    min-height: 16px;
+                    background-color: inherit;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 9px;
+                    margin-top: 3px;
+                    position: relative;
+                    border-radius: 0;
+                    border: 5px solid var(--Color-grey);
+                }
+
+                .wcpa_check::before {
+                    top: 3px;
+                    left: 3px;
+                    width: 8px;
+                    height: 8px;
+                    background-color: var(--Color-yellow);
+                    display: flex;
+                    margin: 0 auto;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0;
+                    opacity: 0;
+                }
+
+                label {
+                    display: flex;
+                    padding-right: 2em;
+                }
+
+                .jcf-label-active {
+                    .wcpa_check {
+                        width: 16px;
+                        height: 16px;
+                        min-width: 16px;
+                        min-height: 16px;
+                        background-color: inherit;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 9px;
+                        margin-top: 3px;
+                        position: relative;
+                        border: 1px solid var(--Color-yellow);
+
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .wcpa_form_outer {
+        .wcpa_form_item.wcpa_type_select {
+            margin-bottom: 26px;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            label {
+                display: inline-block;
+                padding-right: 0;
+                width: 80px;
+            }
+
+            .select {
+                position: relative;
+                width: 186px;
+                height: 43px;
+                border-radius: 3px;
+                border: 1px solid var(--Color-grey);
+                background-color: #ffffff;
+                display: inline-flex;
+                align-items: center;
+                padding: 0 10px;
+            }
+
+            select {
+                border-radius: 6px;
+                border: 1px solid #ebebeb;
+                background-color: #ffffff;
+                z-index: 2;
+                min-width: 188px;
+                left: -12px;
+                top: 0;
+                padding: 10px;
+
+                option {
+                    &:hover {
+                        background-color: inherit;
+                    }
+                }
+            }
+        }
+    }
+
+
+    span.jcf-select {
+        position: relative;
+    }
+
+    .checkbox-group{
+        display: flex;
+    flex-wrap: wrap;
+    }
+
+    .wcpa_form_outer .wcpa_form_item .wcpa_checkbox label {
+        display: flex;
+        max-width: 200px;
+    }
+
+    h2 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 22px;
+        font-family: 'GothamPro-Bold';
+        margin-bottom: 27px;
+        display: block;
+    }
+
+
+.form-tabs {
+    margin-top: 45px;
+
+    .tabs-link {
+        border: none;
+        margin-bottom: 22px;
+
+        a {
+            color: var(--Color-black);
+            font-family: 'GothamPro-Bold';
+            font-size: 22px;
+            font-weight: 700;
+            display: inline-flex;
+            position: relative;
+            width: 100%;
+    line-height: 35px;
+
+            &::before {
+                display: none;
+            }
+
+            &:nth-of-type(2) {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+.list .wpcf7 p {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+}
+
+.form-feedback {
+    display: inline-block;
+    width: 49%;
+    padding-right: 69px;
+
+    &.active {
+        display: inline-block;
+    }
+
+    &:nth-of-type(2) {
+        width: 48%;
+        margin-left: 13px;
+    }
+
+    .form-column {
+        padding-left: 30px;
+        position: relative;
+        margin-bottom: 48px;
+    }
+
+    textarea {
+        margin-top: 22px;
+    }
+
+    .border-green {
+        top: 22px;
+    }
+
+    .form-action {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        .btn {
+            color: var(--Color-black);
+            border: 1px solid var(--Color-black);
+            line-height: 15px;
+            margin: 58px auto 5px 16px;
+            display: flex;
+            justify-content: center;
+            min-width: 241px;
+        }
+    }
+}
+
+.wpcf7 {
+    p{
+    border: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    textarea {
+        resize: none;
+        width: 100%;
+        min-height: 143px;
+        border-radius: 3px;
+        border: 1px solid #a3a3a3;
+        background-color: inherit;
+        padding: 16px 28px;
+        margin-top: 0;
+        position: relative;
+    }
+
+    .form-column {
+        padding-left: 30px;
+        position: relative;
+        margin-bottom: 20px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 30px;
+            height: 1px;
+            background-color: var(--Color-green);
+            bottom: -5px;
+            left: 0;
+            z-index: 1;
+        }
+
+        label {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: var(--Color-grey);
+            bottom: -5px;
+            left: 0;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+    }
+
+
+
+    input {
+        border: none;
+        background-color: inherit;
+        font-size: 14px;
+        height: 30px;
+        font-weight: 300;
+        color: #a3a3a3;
+        width: 100%;
+    }
+
+    textarea {
+        margin-top: 0;
+    }
+
+    .border-green {
+        top: 22px;
+    }
+
+
+    .form-action {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        .btn {
+            color: var(--Color-black);
+            border: 1px solid var(--Color-black);
+            line-height: 15px;
+            margin: 58px auto 5px 16px;
+            display: flex;
+            justify-content: center;
+            min-width: 241px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1680px) {
+.wcpa_form_outer .wcpa_form_item .wcpa_checkbox, .wcpa_form_outer .wcpa_form_item .wcpa_radio {
+    position: relative;
+    width: 25%;
+}
+}

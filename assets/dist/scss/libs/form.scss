@@ -1,0 +1,42 @@
+.red-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 31px;
+  pointer-events: none;
+  font-size: 14px;
+  color: #ff0101;
+  font-size: 15px;
+  line-height: inherit;
+  display: none;
+}
+
+input {
+
+  &:active,
+  &:focus {
+
+    &~.red-text {
+      display: none;
+    }
+
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+
+  &:valid {
+    + ::placeholder {
+      opacity: 1;
+    }
+
+    &~.red-text {
+      display: none;
+    }
+  }
+
+  &::placeholder {
+    color: #bababa;
+  }
+}

@@ -1,0 +1,138 @@
+.btn {
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+  display: inline-flex;
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid var(--Color-black);
+  font-size: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 32px 0 40px;
+  font-size: 10px;
+  text-transform: uppercase;
+  z-index: 1;
+  position: relative;
+  min-width: 214px;
+  min-height: 52px;
+  letter-spacing: 1px;
+  color: var(--Color-black);
+  background-color: inherit;
+  margin-left: 15px;
+  font-weight: 700;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 1px;
+    background-color: var(--Color-black);
+    left: -14px;
+    top: 50%;
+  }
+
+  &:hover {
+    border: 1px solid var(--Color-yellow);
+
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+.btn-inverse {
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+  display: inline-flex;
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid var(--Color-black);
+  font-size: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  font-size: 10px;
+  text-transform: uppercase;
+  z-index: 1;
+  position: relative;
+  min-width: 214px;
+  min-height: 52px;
+  letter-spacing: 1px;
+  color: var(--Color-black);
+  background-color: inherit;
+  font-weight: 700;
+
+  &:hover {
+    border: 1px solid var(--Color-yellow);
+    background-color: var(--Color-yellow);
+    color: #fff;
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+.btn-call {
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+  background-color: var(--Color-yellow);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 1px solid var(--Color-yellow);
+  min-width: 214px;
+  min-height: 52px;
+  border-radius: 3px;
+  color: var(--Color-black);
+  letter-spacing: 1px;
+  font-family: 'GothamPro-Medium';
+
+  &.inverse {
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &:hover {
+    background-color: inherit;
+  }
+
+}

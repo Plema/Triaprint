@@ -1,0 +1,41 @@
+.footer {
+    background-color: var(--Background-grey);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 13px 0;
+    flex-direction: column;
+    align-items: center;
+
+    a,
+    p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: var(--Color-grey);
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .footer {
+        padding: 13px 20px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer {
+        padding: 42px 7% 42px 10%;
+
+        a,
+        p {
+            font-size: 18px;
+        }
+    }
+}

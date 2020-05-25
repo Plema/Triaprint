@@ -1,0 +1,510 @@
+.bread-crumbs {
+    margin-top: 81px;
+    padding: 0 19px;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            padding-right: 15px;
+            padding-left: 18px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                height: 12px;
+                width: 1px;
+                background-color: var(--Color-grey);
+                left: 0px;
+                top: 7px;
+            }
+
+            &:nth-of-type(1) {
+                padding-left: 0;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            a {
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 24px;
+                color: var(--Color-grey);
+                font-family: 'GothamPro-Light';
+            }
+
+            span {
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 24px;
+                color: var(--Color-black);
+            }
+        }
+    }
+}
+
+.section {
+    .heading {
+        h2 {
+            padding-left: 65px;
+            margin-bottom: 39px;
+            position: relative;
+            line-height: 35px;
+            margin-top: 27px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 28px;
+                height: 1px;
+                background-color: #95c018;
+                left: 20px;
+                top: 17px;
+            }
+        }
+    }
+
+
+    &-about {
+        padding-bottom: 40px;
+
+        .section-content {
+            padding: 0 20px;
+        }
+
+        .content-img {
+            width: 280px;
+            height: 167px;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+        }
+
+        span {
+            font-family: 'GothamPro-Medium';
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 23px;
+            display: block;
+            margin-top: 22px;
+            margin-bottom: 18px;
+        }
+
+        p {
+            // font-family: 'GothamPro-Light';
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            margin: 0;
+            margin-bottom: 21px;
+        }
+    }
+
+    &-form-dark {
+        padding: 19px 19px 48px;
+        min-height: auto;
+        background-color: var(--Background-black);
+        font-family: 'GothamPro-Light', sans-serif;
+
+        .heading {
+            h2 {
+                color: #fff;
+                line-height: 33px;
+                margin-top: 29px;
+                margin-bottom: 10px;
+                padding-left: 46px;
+
+                &::before {
+                    left: 1px;
+                }
+            }
+
+            span {
+                color: #fff;
+                padding-left: 50px;
+                display: block;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 18px;
+                font-family: 'GothamPro-Light';
+                margin-bottom: 36px;
+            }
+        }
+
+        .form-registration {
+            margin-top: 22px;
+        }
+
+        .form-column {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 42px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 30px;
+                height: 1px;
+                background-color: var(--Color-green);
+                bottom: -5px;
+                left: 0;
+                z-index: 1;
+            }
+
+            input {
+                border: none;
+                background-color: inherit;
+                font-size: 14px;
+                height: 30px;
+                font-weight: 300;
+                color: #a3a3a3;
+                width: 100%;
+
+                &::placeholder {
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #a3a3a3;
+                    font-family: 'GothamPro-Light', sans-serif;
+                }
+            }
+
+            label {
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: var(--Color-grey);
+                bottom: -5px;
+                left: 0;
+            }
+        }
+
+        .form-row {
+            position: relative;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 143px;
+            border-radius: 3px;
+            border: 1px solid #a3a3a3;
+            background-color: inherit;
+            padding: 16px 28px;
+            margin-top: 7px;
+            position: relative;
+            color: #a3a3a3;
+            &::placeholder{
+                color: #a3a3a3;
+            }
+        }
+
+        .border-green {
+            position: absolute;
+            width: 30px;
+            height: 1px;
+            background-color: var(--Color-green);
+            top: 7px;
+            left: 0;
+            z-index: 1;
+        }
+
+        .form-action {
+            margin: 0 auto;
+            width: 273px;
+
+            .btn {
+                color: var(--Color-yellow);
+                border: 1px solid #fff;
+                line-height: 15px;
+                margin: 40px auto 5px 36px;
+                display: flex;
+                justify-content: center;
+
+                &::before {
+                    background-color: #fff;
+                }
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+
+            .checkbox {
+                vertical-align: top;
+                width: 17px;
+                height: 17px;
+                margin: 0;
+            }
+
+            .form-group {
+                display: flex;
+                align-items: center;
+                margin-top: 13px;
+                position: relative;
+            }
+
+            span.jcf-checkbox {
+                width: 16px;
+                height: 16px;
+                background-color: #2e2e2e;
+                min-width: 16px;
+                min-height: 16px;
+                background-color: inherit;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 9px;
+                margin-top: 3px;
+                position: relative;
+
+                &.jcf-unchecked {
+                    border: 5px solid #2e2e2e;
+                    background-color: #2e2e2e;
+                }
+
+                &.jcf-checked {
+                    border: 1px solid #2e2e2e;
+                    background-color: #2e2e2e;
+
+                    span {
+                        width: 8px;
+                        height: 8px;
+                        background-color: var(--Color-green);
+                        display: flex;
+                        margin: 0 auto;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .checkbox+label {
+                cursor: pointer;
+            }
+
+            .checkbox__text {
+                position: relative;
+                display: block;
+                line-height: 24px;
+                cursor: pointer;
+                font-size: 12px;
+                font-weight: 400;
+                color: var(--Color-grey);
+                margin-top: 5px;
+
+                a {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: var(--Color-grey);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 480px) {
+    .section-about .content-img {
+        width: 250px;
+        height: 167px;
+        margin: 0;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .section-form-dark .form-registration {
+        max-width: 450px;
+        margin: 22px auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-about {
+        .section-content {
+            padding: 0 40px;
+        }
+
+        .content-img {
+            width: 350px;
+            height: 250px;
+            margin-right: 50px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .section-form-dark {
+        .form-registration {
+            max-width: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-left: 26px;
+        }
+
+        .form-row {
+            width: 46%;
+        }
+
+        .form-action {
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+
+            .btn {
+                display: inline-flex;
+            }
+
+            .form-group {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        width: 570px;
+        right: 8.2%;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .bread-crumbs {
+        margin-top: 17px;
+        padding-left: 9.8%;
+        max-width: 43%;
+    }
+
+    .section-about {
+        padding: 13px 4% 53px 10%;
+
+        .heading h2 {
+            padding-left: 52px;
+            margin-bottom: 50px;
+            position: relative;
+            line-height: 35px;
+            margin-top: 32px;
+
+            &::before {
+                left: 0px;
+                top: 18px;
+            }
+        }
+
+        .content-img {
+            width: 456px;
+            height: 319px;
+            margin-right: 50px;
+            margin-bottom: 20px;
+        }
+
+        .section-content {
+            padding: 0;
+        }
+
+        span {
+            font-size: 18px;
+            line-height: 24px;
+            margin-top: 22px;
+            margin-bottom: 34px;
+            padding-right: 91px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            margin: 0;
+            margin-bottom: 29px;
+            padding-right: 82px;
+        }
+    }
+
+    .section-form-dark {
+        padding: 51px 11% 57px 10%;
+        background-image: url(../img/line-form.png);
+        background-position: 50% 0px;
+        background-repeat: no-repeat;
+
+        .heading {
+            h2 {
+                margin-bottom: 20px;
+            }
+
+            span {
+                font-size: 18px;
+                line-height: 18px;
+                margin-bottom: 44px;
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .section-form-dark {
+        .form-row {
+            width: 63.8%;
+
+            .form-column {
+                input {
+                    &::placeholder {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            textarea {
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
+
+            &:nth-of-type(1) {
+                width: 26%;
+                padding-top: 19px;
+
+                .form-column {
+                    margin-bottom: 66px;
+
+                    &:nth-of-type(2) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .form-action {
+            flex-direction: row-reverse;
+
+            .btn {
+                display: inline-flex;
+                min-width: 246px;
+            }
+
+            .form-group {
+                width: 34%;
+                padding-left: 5px;
+                padding-top: 15px;
+
+                .checkbox__text {
+                    padding-left: 10px;
+                    padding-top: 0;
+                    font-size: 14px;
+                    margin-top: 5px;
+
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
